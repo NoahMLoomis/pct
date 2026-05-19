@@ -69,7 +69,6 @@ image: ./images/end.jpg
 
 ---
 transition: slide-up
-
 ---
 
 # noah-vs-the-sun.com
@@ -165,3 +164,28 @@ layout: center
 
 # User: PCT hiker
 <video src="./images/hiker_demo.mp4" controls autoplay muted loop class="w-full rounded shadow-lg mt-4" />
+
+---
+layout: center
+---
+
+# Tech stack and challenges
+<div grid="~ cols-2 gap-8" m="t-4">
+<div>
+
+**Tech stack**
+- NextJS
+- TailwindCSS for styling
+- Supabase for storage
+- Vercel for deployment
+- Resend for email notifications
+
+</div>
+<div v-click>
+
+**Challenges**
+- Strava integration and API limitations
+- Building a user-friendly interface for non-technical users
+- Getting the distance calculations done correctly based on the location provided (from strava or the user manually)
+</div>
+</div>
