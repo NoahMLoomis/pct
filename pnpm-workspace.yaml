@@ -1,1 +1,5 @@
+onlyBuiltDependencies:
+  - esbuild
+  - vue-demi
+
 shamefullyHoist: true
