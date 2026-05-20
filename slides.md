@@ -22,7 +22,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
-background: ./images/map.png
+background: /images/map.png
 ---
 
 # The Pacific Crest Trail: 4560km hike from Mexico to Canada
@@ -53,7 +53,7 @@ Learn more: https://sli.dev/features/slide-scope-style
 <!-- I left in March, finished in August, took 139 days. This time last year, I was climbing Mt Whitney-->
 ---
 layout: image-right
-image: ./images/sierras.jpg
+image: /images/sierras.jpg
 backgroundSize: 20em 
 ---
 
@@ -186,14 +186,14 @@ layout: center
 ---
 transition: slide-up
 layout: image
-image: ./images/start.jpg
+image: /images/start.jpg
 ---
 
 # Before 
 
 ---
 layout: image
-image: ./images/end.jpg
+image: /images/end.jpg
 ---
 
 # After
