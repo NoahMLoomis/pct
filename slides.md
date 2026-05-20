@@ -1,17 +1,14 @@
 ---
 # try also 'default' to start simple
-theme: unicorn 
+theme: default 
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-layout: center
 title: Pacific Crest Trail
 # https://sli.dev/features/drawing
 transition: slide-left
 class: text-center
 # enable Comark Syntax: https://comark.dev/syntax/markdown
 comark: true
-# duration of the presentation
-duration: 35min
 ---
 
 # Pacific Crest Trail
@@ -24,48 +21,48 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
-layout: center
 background: ./images/map.png
 ---
 
-# What is the PCT?
+# The Pacific Crest Trail: 4560km hike from Mexico to Canada
 
-<!-- <img src="./images/map.png" alt="PCT Map" style=" margin: 0 auto;" /> -->
+<div grid="~ cols-2 gap-8" m="t-4">
+<div>
 
-<div v-click>A 2650 mile hike on the west coast of the US, from Mexico to Canada, through California, Oregon, and Washington.
+
+<v-click>
+
+- Through California, Oregon, and Washington
+- 10,000 annual attempts
+- 25% success rate
+
+
+</v-click>
 </div>
-<div v-click>
-10,000 people attempt it every year, about 25% of them finish.
+<div>
+<img src="./images/map2.png" alt="PCT Map" class="max-h-[55vh] w-auto mx-auto object-contain" />
+
 </div>
-<div v-click>
-I left March 26th 2025, finished August 12th 2025
 </div>
 <!--
 You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/features/slide-scope-style
 -->
 
-<!--
-Here is another comment.
--->
-
+<!-- I left in March, finished in August, took 139 days. This time last year, I was climbing Mt Whitney-->
 ---
-transition: slide-up
-layout: image
-image: ./images/start.jpg
+layout: image-right
+image: ./images/sierras.jpg
+backgroundSize: 20em 
 ---
 
-# Before 
+# This time last year
+
+<style scoped>
+img { object-fit: contain !important; }
+</style>
 
 ---
-layout: image
-image: ./images/end.jpg
----
-
-# After
-
----
-transition: slide-up
 ---
 
 # noah-vs-the-sun.com
@@ -76,7 +73,6 @@ transition: slide-up
   <img v-click border="rounded" src="./images/blog3.png" alt="" class="w-full h-full object-cover">
 </div>
 ---
-layout: center
 ---
 
 # Problems with the blog
@@ -109,7 +105,6 @@ layout: center
 </div>
 
 ---
-layout: center
 ---
 
 # How can I improve it?
@@ -121,7 +116,6 @@ layout: center
 </v-clicks>
 
 ---
-layout: center
 ---
 
 # pct-tracker.com
@@ -188,3 +182,24 @@ layout: center
 <!-- At first, was making too many strava api calls by getting all activitiesn from the start date forward -->
 </div>
 </div>
+
+---
+transition: slide-up
+layout: image
+image: ./images/start.jpg
+---
+
+# Before 
+
+---
+layout: image
+image: ./images/end.jpg
+---
+
+# After
+
+---
+transition: slide-up
+---
+
+
