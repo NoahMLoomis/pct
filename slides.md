@@ -158,7 +158,6 @@ layout: center
 <video src="./images/hiker_demo.mp4" controls muted loop class="w-full rounded shadow-lg mt-4" />
 
 ---
-layout: center
 ---
 
 # Tech stack and challenges
