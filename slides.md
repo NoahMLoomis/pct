@@ -1,13 +1,10 @@
 ---
 # try also 'default' to start simple
-theme: default
+theme: unicorn 
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 layout: center
 title: Pacific Crest Trail
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
 # https://sli.dev/features/drawing
 transition: slide-left
 class: text-center
@@ -41,7 +38,7 @@ background: ./images/map.png
 10,000 people attempt it every year, about 25% of them finish.
 </div>
 <div v-click>
-Left March 26th 2025, finished August 12th 2025
+I left March 26th 2025, finished August 12th 2025
 </div>
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -156,14 +153,14 @@ layout: center
 
 # User: Friend and family
 
-<video src="./images/family_demo.mp4" controls autoplay muted loop class="w-full rounded shadow-lg mt-4" />
+<video src="./images/family_demo.mp4" controls muted loop class="w-full rounded shadow-lg mt-4" />
 
 ---
 layout: center
 ---
 
 # User: PCT hiker
-<video src="./images/hiker_demo.mp4" controls autoplay muted loop class="w-full rounded shadow-lg mt-4" />
+<video src="./images/hiker_demo.mp4" controls muted loop class="w-full rounded shadow-lg mt-4" />
 
 ---
 layout: center
@@ -187,5 +184,7 @@ layout: center
 - Strava integration and API limitations
 - Building a user-friendly interface for non-technical users
 - Getting the distance calculations done correctly based on the location provided (from strava or the user manually)
+
+<!-- At first, was making too many strava api calls by getting all activitiesn from the start date forward -->
 </div>
 </div>
