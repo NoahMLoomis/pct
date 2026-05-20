@@ -7,6 +7,9 @@
     "dev": "slidev --open",
     "export": "slidev export"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "vue-demi"]
+  },
   "dependencies": {
     "@slidev/cli": "^52.15.2",
     "@slidev/theme-bricks": "^0.25.0",
