@@ -31,14 +31,12 @@ background: /images/map.png
 <div>
 
 
-<v-click>
 
 - Through California, Oregon, and Washington
 - 10,000 annual attempts
 - 25% success rate
+- Takes about 5 months to do
 
-
-</v-click>
 </div>
 <div>
 <img src="./images/map2.png" alt="PCT Map" class="max-h-[55vh] w-auto mx-auto object-contain" />
@@ -69,41 +67,24 @@ img { object-fit: contain !important; }
 # noah-vs-the-sun.com
 
 <div grid="~ cols-3 gap-4" m="t-4">
-  <img v-click border="rounded" src="./images/blog1.png" alt="" class="w-full h-full object-cover">
-  <img  v-click border="rounded" src="./images/blog2.png" alt="" class="w-full h-full object-cover">
-  <img v-click border="rounded" src="./images/blog3.png" alt="" class="w-full h-full object-cover">
+    <v-click>
+      <img border="rounded" src="./images/blog1.png" alt="" class="w-full h-full object-cover">
+      <img border="rounded" src="./images/blog2.png" alt="" class="w-full h-full object-cover">
+      <img border="rounded" src="./images/blog3.png" alt="" class="w-full h-full object-cover">
+    </v-click>
 </div>
 ---
 ---
 
 # Problems with the blog
 
-<div grid="~ cols-2 gap-8" m="t-4">
-<div>
-
-**Pros**
-
-<v-clicks>
-
-- Minimalist
-- Featured a map with a progress tracker
-- Images were an accompaniment, not the main attraction to each post
-
-</v-clicks>
-</div>
-<div>
-
-**Cons**
-
-<v-clicks>
+<v-click>
 
 - In order to update the map with my location, I had to manually make a blog post.
 - Markdown seemed like a great easy way to make updates — until you have to do it on your phone
 
 
-</v-clicks>
-</div>
-</div>
+</v-click>
 
 ---
 ---
@@ -114,12 +95,14 @@ img { object-fit: contain !important; }
 - Anybody should be able to use something like my custom blog
 - Making a blog post just to update the location is a bit tedious
 - Friends and family being notified when a new post is made would save lots of time and energy 
+- I tracked all my activities on Strava, it would be great if I could use that data to update my position on the map
+
 </v-clicks>
 
 ---
 ---
 
-# pct-tracker.com
+# So I did improve it: pct-tracker.com
 
 <div grid="~ cols-2 gap-8" m="t-4">
 <div>
@@ -135,10 +118,6 @@ img { object-fit: contain !important; }
 </v-clicks>
 </div>
 <div>
-
-<v-clicks>
- <img src="./images/landing.png"  class="w-full h-auto" />
-</v-clicks>
 </div>
 </div>
 
@@ -175,13 +154,18 @@ layout: center
 <div v-click>
 
 **Challenges**
-- Strava integration and API limitations
 - Building a user-friendly interface for non-technical users
+- Strava integration and API limitations
 - Getting the distance calculations done correctly based on the location provided (from strava or the user manually)
 
-<!-- At first, was making too many strava api calls by getting all activitiesn from the start date forward -->
 </div>
 </div>
+
+<!-- 
+    At first, syncing took forever, since I was fetching all the activities from start date to end date 
+    Eventually I figured out that I actually only need the latest activity, and filtered more heavily to ensure the activity took place on the pct 
+
+-->
 
 ---
 transition: slide-up
